@@ -441,7 +441,6 @@ const RaghuveeraGadya = ({ navigation }) => {
               line2={'ಗಲಿತ'}
               line3={'ವಿಷ-ವದನ ಶರ ಕದನ !'}
             />
-            v
             <St
               color={textColor}
               fontSize={font}
