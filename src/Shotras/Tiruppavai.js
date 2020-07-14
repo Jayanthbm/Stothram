@@ -8,6 +8,7 @@ import Slider from '@react-native-community/slider';
 import Header from '../Components/Header';
 import St from '../Components/St';
 import Admob from '../Components/Admob';
+import * as Adhelper from '../Constants/AdUnits';
 
 const Tiruppavai = ({ navigation }) => {
   const [isEnabled, setIsEnabled] = useState(null);
@@ -513,7 +514,10 @@ const Tiruppavai = ({ navigation }) => {
 
           </View>
         </ScrollView>
-        <Admob />
+        <Admob
+          type={'banner'}
+          unitId={Adhelper.GenerateId()}
+        />
       </React.Fragment>
     </View>
 

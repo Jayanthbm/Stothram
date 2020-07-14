@@ -7,6 +7,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 import { FlatGrid } from 'react-native-super-grid';
 import Header from '../Components/Header';
 import Admob from '../Components/Admob';
+import * as Adhelper from '../Constants/AdUnits';
 const ShotramScreen = ({ navigation }) => {
   const [isEnabled, setIsEnabled] = useState(null);
   const [darkmode, setDarkMode] = useState(null);
@@ -40,13 +41,13 @@ const ShotramScreen = ({ navigation }) => {
       {
         id: 4,
         title: 'Hayagriva',
-        displayTitle: 'ಶ್ರೀ ಹಯಗ್ರೀವ ಸ್ತೋತ್ರಂ',
+        displayTitle: 'ಹಯಗ್ರೀವ ಸ್ತೋತ್ರಂ',
         goto: 'Hayagriva',
       },
       {
         id: 5,
         title: 'MukundaMala',
-        displayTitle: 'ಮುಕುಂದಮಾಲಾ ಸ್ತೋತ್ರಂ',
+        displayTitle: 'ಮುಕುಂದಮಾಲಾ',
         goto: 'MukundaMala',
       },
       {
@@ -239,7 +240,10 @@ const ShotramScreen = ({ navigation }) => {
           />
         )}
       </React.Fragment>
-      <Admob />
+      <Admob
+        type={'banner'}
+        unitId={Adhelper.GenerateId()}
+      />
     </View>
 
   );

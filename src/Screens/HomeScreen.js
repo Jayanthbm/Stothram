@@ -6,6 +6,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 import Icon from 'react-native-vector-icons/AntDesign';
 import { FlatGrid } from 'react-native-super-grid';
 import Admob from '../Components/Admob';
+import * as Adhelper from '../Constants/AdUnits';
 const HomeScreen = ({ navigation }) => {
   const [darkmode, setDarkMode] = useState(null);
   const [dataarray, setDataarray] = useState(null);
@@ -124,10 +125,12 @@ const HomeScreen = ({ navigation }) => {
     );
     return () => backHandler.remove();
   }, []);
-
   return (
     <View style={styles.Container}>
-      <Admob />
+      <Admob
+        type={'banner'}
+        unitId={Adhelper.GenerateId()}
+      />
       <View style={styles.flatGridWrapper}>
         <Text style={styles.headingText}>Select One</Text>
       </View>
@@ -150,7 +153,10 @@ const HomeScreen = ({ navigation }) => {
           )}
         />
       )}
-      <Admob />
+      <Admob
+        type={'banner'}
+        unitId={Adhelper.GenerateId()}
+      />
     </View>
   );
 };

@@ -9,6 +9,7 @@ import RNRestart from 'react-native-restart';
 import Icon from 'react-native-vector-icons/AntDesign';
 import Icon1 from 'react-native-vector-icons/MaterialCommunityIcons';
 import Admob from '../Components/Admob';
+import * as Adhelper from '../Constants/AdUnits';
 const SettingsScreen = ({ navigation }) => {
   //Global Settings
   const [darkmode, setDarkMode] = useState(null);
@@ -136,7 +137,7 @@ const SettingsScreen = ({ navigation }) => {
   };
 
   const Youtube = async (channelId) => {
-    let url = `'https://www.youtube.com/channel/${channelId}`;
+    let url = `https://www.youtube.com/channel/${channelId}`;
     const supported = await Linking.canOpenURL(url);
     if (supported) {
       await Linking.openURL(url);
@@ -415,7 +416,10 @@ const SettingsScreen = ({ navigation }) => {
         <Icon name="heart" style={styles.FooterViewIcon} />
         <Text style={styles.FooterViewText}>In India </Text>
       </View>
-      <Admob />
+      <Admob
+        type={'banner'}
+        unitId={Adhelper.GenerateId()}
+      />
     </ScrollView>
   );
 };

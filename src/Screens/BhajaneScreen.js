@@ -7,6 +7,7 @@ import AsyncStorage from '@react-native-community/async-storage';
 import { FlatGrid } from 'react-native-super-grid';
 import Header from '../Components/Header';
 import Admob from '../Components/Admob';
+import * as Adhelper from '../Constants/AdUnits';
 const BhajaneScreen = ({ navigation }) => {
   const [isEnabled, setIsEnabled] = useState(null);
   const [darkmode, setDarkMode] = useState(null);
@@ -23,15 +24,15 @@ const BhajaneScreen = ({ navigation }) => {
     setDataarray([
       {
         id: 1,
-        title: 'Thugire Rangana',
-        goto: 'ThugireRangana',
-        displayTitle: 'ತೂಗಿರೆ ರಂಗನ ತೂಗಿರೆ ಕೃಷ್ಣನ',
-      },
-      {
-        id: 2,
         title: 'BhajaYatirajam',
         displayTitle: 'ಭಜ ಯತಿರಾಜಂ',
         goto: 'BhajaYatirajam',
+      },
+      {
+        id: 2,
+        title: 'Thugire Rangana Thugire Krishnana',
+        goto: 'ThugireRangana',
+        displayTitle: 'ತೂಗಿರೆ ರಂಗನ',
       },
     ]);
   };
@@ -198,7 +199,10 @@ const BhajaneScreen = ({ navigation }) => {
           />
         )}
       </React.Fragment>
-      <Admob />
+      <Admob
+        type={'banner'}
+        unitId={Adhelper.GenerateId()}
+      />
     </View>
   );
 };

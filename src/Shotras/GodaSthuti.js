@@ -8,6 +8,7 @@ import Slider from '@react-native-community/slider';
 import Header from '../Components/Header';
 import St from '../Components/St';
 import Admob from '../Components/Admob';
+import * as Adhelper from '../Constants/AdUnits';
 
 const GodaSthuti = ({ navigation }) => {
   const [isEnabled, setIsEnabled] = useState(null);
@@ -130,7 +131,10 @@ const GodaSthuti = ({ navigation }) => {
             {/* Shotras */}
           </View>
         </ScrollView>
-        <Admob />
+        <Admob
+          type={'banner'}
+          unitId={Adhelper.GenerateId()}
+        />
       </React.Fragment>
     </View>
 

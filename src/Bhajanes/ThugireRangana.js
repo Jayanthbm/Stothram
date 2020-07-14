@@ -8,6 +8,7 @@ import Slider from '@react-native-community/slider';
 import Header from '../Components/Header';
 import St from '../Components/St';
 import Admob from '../Components/Admob';
+import * as Adhelper from '../Constants/AdUnits';
 
 const ThugireRangana = ({ navigation }) => {
   const [isEnabled, setIsEnabled] = useState(null);
@@ -173,9 +174,12 @@ const ThugireRangana = ({ navigation }) => {
             />
           </View>
         </ScrollView>
-        <Admob />
-      </React.Fragment>
-    </View>
+        <Admob
+          type={'banner'}
+          unitId={Adhelper.GenerateId()}
+        />
+      </React.Fragment >
+    </View >
 
   );
 };
