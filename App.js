@@ -22,6 +22,7 @@ import GarudaDandakam from './src/Shotras/GarudaDandakam';
 
 import BhajaYatirajam from './src/Bhajanes/BhajaYatirajam';
 import ThugireRangana from './src/Bhajanes/ThugireRangana';
+import HanumanChalisa from './src/Bhajanes/HanumanChalisa';
 
 const switchNavigator = createSwitchNavigator({
   HomeScreen: createBottomTabNavigator({
@@ -58,11 +59,12 @@ const switchNavigator = createSwitchNavigator({
   RaghuveeraGadya: RaghuveeraGadya,
   Sudarshanastaka: Sudarshanastaka,
   Tiruppavai: Tiruppavai,
-  BhajaYatirajam: BhajaYatirajam,
   GarudaDandakam: GarudaDandakam,
 
   //Bhajanes
+  BhajaYatirajam: BhajaYatirajam,
   ThugireRangana: ThugireRangana,
+  HanumanChalisa: HanumanChalisa,
 });
 
 const App = createAppContainer(switchNavigator);

@@ -34,6 +34,12 @@ const BhajaneScreen = ({ navigation }) => {
         goto: 'ThugireRangana',
         displayTitle: 'ತೂಗಿರೆ ರಂಗನ',
       },
+      {
+        id: 3,
+        title: 'Hanuman Chalisa',
+        goto: 'HanumanChalisa',
+        displayTitle: 'ಹನುಮಾನ್ ಚಾಲಿಸಾ',
+      },
     ]);
   };
   const storeData = async (value) => {
