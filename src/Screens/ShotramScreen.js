@@ -74,6 +74,12 @@ const ShotramScreen = ({ navigation }) => {
         displayTitle: 'ಶ್ರೀ ಗರುಡ ದಂಡಕಂ',
         goto: 'GarudaDandakam',
       },
+      {
+        id: 10,
+        title: 'VishnuSahasranamam',
+        displayTitle: 'ಶ್ರೀ ವಿಷ್ಣು ಸಹಸ್ರ ನಾಮ',
+        goto: 'VishnuSahasranamam',
+      },
     ]);
   };
   const storeData = async (value) => {
