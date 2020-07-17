@@ -140,6 +140,12 @@ const ShotramScreen = ({ navigation }) => {
         displayTitle: 'ಶ್ರೀ ದೇಶಿಕಮಂಗಳಂ',
         goto: 'DeshikaMangalam',
       },
+      {
+        id: 21,
+        title: 'SriStuti',
+        displayTitle: 'ಶ್ರೀಸ್ತುತಿಃ',
+        goto: 'SriStuti',
+      },
     ]);
   };
   const storeData = async (value) => {

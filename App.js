@@ -30,6 +30,7 @@ import Tirupalliyucchi from './src/Shotras/Tirupalliyucchi';
 import Shatumurai from './src/Shotras/Shatumurai';
 import ShatumuraiValitirunam from './src/Shotras/ShatumuraiValitirunam';
 import DeshikaMangalam from './src/Shotras/DeshikaMangalam';
+import SriStuti from './src/Shotras/SriStuti';
 
 import BhajaYatirajam from './src/Bhajanes/BhajaYatirajam';
 import ThugireRangana from './src/Bhajanes/ThugireRangana';
@@ -82,6 +83,7 @@ const switchNavigator = createSwitchNavigator({
   Shatumurai: Shatumurai,
   ShatumuraiValitirunam: ShatumuraiValitirunam,
   DeshikaMangalam: DeshikaMangalam,
+  SriStuti: SriStuti,
   //Bhajanes
   BhajaYatirajam: BhajaYatirajam,
   ThugireRangana: ThugireRangana,
