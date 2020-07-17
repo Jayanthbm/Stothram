@@ -80,7 +80,7 @@ const HareKrishnaMantram = ({ navigation }) => {
         let or = isPortrait() ? 'portrait' : 'landscape';
         setOrientation(or);
         const backAction = () => {
-            navigation.navigate('ShotramScreen');
+            navigation.navigate('BhajaneScreen');
             return true;
         };
         const backHandler = BackHandler.addEventListener(

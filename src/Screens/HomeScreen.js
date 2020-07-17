@@ -18,7 +18,7 @@ const HomeScreen = ({ navigation }) => {
     setDataarray([
       {
         id: 1,
-        title: 'Sotras',
+        title: 'Stothram',
         goto: 'ShotramScreen',
         code: '#1abc9c',
         text: '#fff',
@@ -26,7 +26,7 @@ const HomeScreen = ({ navigation }) => {
       },
       {
         id: 2,
-        title: 'Bhajanes',
+        title: 'Bhajanas',
         goto: 'BhajaneScreen',
         code: '#3498db',
         text: '#fff',

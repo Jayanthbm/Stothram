@@ -251,7 +251,7 @@ const ShotramScreen = ({ navigation }) => {
   return (
     <View style={{ backgroundColor: backgroundColor, flex: 1 }} >
       <Header
-        title="Sotras"
+        title="Stothram"
         darkmode={darkmode}
       />
       <React.Fragment>

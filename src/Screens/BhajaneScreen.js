@@ -163,7 +163,7 @@ const BhajaneScreen = ({ navigation }) => {
   return (
     <View style={{ backgroundColor: backgroundColor, flex: 1 }} >
       <Header
-        title="Bhajanes"
+        title="Bhajanas"
         darkmode={darkmode}
       />
       <React.Fragment>

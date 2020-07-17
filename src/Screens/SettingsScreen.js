@@ -366,7 +366,7 @@ const SettingsScreen = ({ navigation }) => {
 
                 <TouchableWithoutFeedback
                   onPress={() => {
-                    mailTo('');
+                    mailTo('yoganarasimhaiyengar2000@gmail.com');
                   }}>
                   <Icon
                     name="mail"
