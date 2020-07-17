@@ -77,8 +77,14 @@ const ShotramScreen = ({ navigation }) => {
       {
         id: 10,
         title: 'VishnuSahasranamam',
-        displayTitle: 'ಶ್ರೀ ವಿಷ್ಣು ಸಹಸ್ರ ನಾಮ',
+        displayTitle: 'ವಿಷ್ಣು ಸಹಸ್ರ ನಾಮ',
         goto: 'VishnuSahasranamam',
+      },
+      {
+        id: 11,
+        title: 'Jitante',
+        displayTitle: 'ಜಿತಂತೇ ಸ್ತೋತ್ರಂ',
+        goto: 'Jitante',
       },
     ]);
   };
