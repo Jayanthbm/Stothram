@@ -92,6 +92,54 @@ const ShotramScreen = ({ navigation }) => {
         displayTitle: 'ಶ್ರೀ ನ್ಯಾಸದಶಕಂ',
         goto: 'Nyasadashaka',
       },
+      {
+        id: 13,
+        title: 'Amaladipiran',
+        displayTitle: 'ಅಮಲನಾದಿಪಿರಾನ್',
+        goto: 'Amaladipiran',
+      },
+      {
+        id: 14,
+        title: 'KanninunShiruttamb',
+        displayTitle: 'ಕಣ್ಣಿನುಣ್ ಶಿರುತ್ತಾಮ್ಬು',
+        goto: 'KanninunShiruttamb',
+      },
+      {
+        id: 15,
+        title: 'ChaturShloki',
+        displayTitle: 'ಚತುಶ್ಲೋಕೀ',
+        goto: 'ChaturShloki',
+      },
+      {
+        id: 16,
+        title: 'Tirupalland',
+        displayTitle: 'ತಿರುಪ್ಪಲ್ಲಾಂಡು',
+        goto: 'Tirupalland',
+      },
+      {
+        id: 17,
+        title: 'Tirupalliyucchi',
+        displayTitle: 'ತಿರುಪ್ಪಳ್ಳಿಯೆಳುಚ್ಚಿ',
+        goto: 'Tirupalliyucchi',
+      },
+      {
+        id: 18,
+        title: 'Shatumurai',
+        displayTitle: 'ಶಾತ್ತುಮರೈ',
+        goto: 'Shatumurai',
+      },
+      {
+        id: 19,
+        title: 'ShatumuraiValitirunam',
+        displayTitle: 'ಶಾತ್ತುಮರೈ & ವಾಳಿತ್ತಿರುನಾಮಮ್',
+        goto: 'ShatumuraiValitirunam',
+      },
+      {
+        id: 20,
+        title: 'DeshikaMangalam',
+        displayTitle: 'ಶ್ರೀ ದೇಶಿಕಮಂಗಳಂ',
+        goto: 'DeshikaMangalam',
+      },
     ]);
   };
   const storeData = async (value) => {

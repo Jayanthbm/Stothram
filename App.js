@@ -22,6 +22,14 @@ import GarudaDandakam from './src/Shotras/GarudaDandakam';
 import VishnuSahasranamam from './src/Shotras/VishnuSahasranamam';
 import Jitante from './src/Shotras/Jitante';
 import Nyasadashaka from './src/Shotras/Nyasadashaka';
+import Amaladipiran from './src/Shotras/Amaladipiran';
+import KanninunShiruttamb from './src/Shotras/KanninunShiruttamb';
+import ChaturShloki from './src/Shotras/ChaturShloki';
+import Tirupalland from './src/Shotras/Tirupalland';
+import Tirupalliyucchi from './src/Shotras/Tirupalliyucchi';
+import Shatumurai from './src/Shotras/Shatumurai';
+import ShatumuraiValitirunam from './src/Shotras/ShatumuraiValitirunam';
+import DeshikaMangalam from './src/Shotras/DeshikaMangalam';
 
 import BhajaYatirajam from './src/Bhajanes/BhajaYatirajam';
 import ThugireRangana from './src/Bhajanes/ThugireRangana';
@@ -66,6 +74,14 @@ const switchNavigator = createSwitchNavigator({
   VishnuSahasranamam: VishnuSahasranamam,
   Jitante: Jitante,
   Nyasadashaka: Nyasadashaka,
+  Amaladipiran: Amaladipiran,
+  KanninunShiruttamb: KanninunShiruttamb,
+  ChaturShloki: ChaturShloki,
+  Tirupalland: Tirupalland,
+  Tirupalliyucchi: Tirupalliyucchi,
+  Shatumurai: Shatumurai,
+  ShatumuraiValitirunam: ShatumuraiValitirunam,
+  DeshikaMangalam: DeshikaMangalam,
   //Bhajanes
   BhajaYatirajam: BhajaYatirajam,
   ThugireRangana: ThugireRangana,
