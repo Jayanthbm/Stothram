@@ -40,6 +40,25 @@ const BhajaneScreen = ({ navigation }) => {
         goto: 'HanumanChalisa',
         displayTitle: 'ಹನುಮಾನ್ ಚಾಲಿಸಾ',
       },
+      {
+        id: 4,
+        title: 'Hare Krishna Mantram',
+        goto: 'HareKrishnaMantram',
+        displayTitle: 'ಹರೇ ಕೃಷ್ಣ ಮಂತ್ರಂ',
+      },
+      {
+        id: 4,
+        title: 'ShuddaBrahma',
+        goto: 'ShuddaBrahma',
+        displayTitle: 'ಶುದ್ಧಬ್ರಹ್ಮ',
+      },
+      {
+        id: 5,
+        title: 'SreenivasaNeenePaliso',
+        goto: 'SreenivasaNeenePaliso',
+        displayTitle: 'ಶ್ರೀನಿವಾಸ ನೀನೇ ಪಾಲಿಸೋ',
+      },
+
     ]);
   };
   const storeData = async (value) => {
