@@ -86,6 +86,12 @@ const ShotramScreen = ({ navigation }) => {
         displayTitle: 'ಜಿತಂತೇ ಸ್ತೋತ್ರಂ',
         goto: 'Jitante',
       },
+      {
+        id: 12,
+        title: 'Nyasadashaka',
+        displayTitle: 'ಶ್ರೀ ನ್ಯಾಸದಶಕಂ',
+        goto: 'Nyasadashaka',
+      },
     ]);
   };
   const storeData = async (value) => {

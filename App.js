@@ -21,6 +21,7 @@ import Tiruppavai from './src/Shotras/Tiruppavai';
 import GarudaDandakam from './src/Shotras/GarudaDandakam';
 import VishnuSahasranamam from './src/Shotras/VishnuSahasranamam';
 import Jitante from './src/Shotras/Jitante';
+import Nyasadashaka from './src/Shotras/Nyasadashaka';
 
 import BhajaYatirajam from './src/Bhajanes/BhajaYatirajam';
 import ThugireRangana from './src/Bhajanes/ThugireRangana';
@@ -64,6 +65,7 @@ const switchNavigator = createSwitchNavigator({
   GarudaDandakam: GarudaDandakam,
   VishnuSahasranamam: VishnuSahasranamam,
   Jitante: Jitante,
+  Nyasadashaka: Nyasadashaka,
   //Bhajanes
   BhajaYatirajam: BhajaYatirajam,
   ThugireRangana: ThugireRangana,
