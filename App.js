@@ -38,6 +38,8 @@ import HanumanChalisa from './src/Bhajanes/HanumanChalisa';
 import HareKrishnaMantram from './src/Bhajanes/HareKrishnaMantram';
 import ShuddaBrahma from './src/Bhajanes/ShuddaBrahma';
 import SreenivasaNeenePaliso from './src/Bhajanes/SreenivasaNeenePaliso';
+import DheeraMaruthi from './src/Bhajanes/DheeraMaruthi';
+import KodandaRama from './src/Bhajanes/KodandaRama';
 const switchNavigator = createSwitchNavigator({
   HomeScreen: createBottomTabNavigator({
     HomeScreen: {
@@ -92,7 +94,9 @@ const switchNavigator = createSwitchNavigator({
   HanumanChalisa: HanumanChalisa,
   HareKrishnaMantram: HareKrishnaMantram,
   ShuddaBrahma: ShuddaBrahma,
-  SreenivasaNeenePaliso: SreenivasaNeenePaliso
+  SreenivasaNeenePaliso: SreenivasaNeenePaliso,
+  DheeraMaruthi: DheeraMaruthi,
+  KodandaRama: KodandaRama
 });
 
 const App = createAppContainer(switchNavigator);

@@ -54,11 +54,22 @@ const BhajaneScreen = ({ navigation }) => {
       },
       {
         id: 5,
-        title: 'SreenivasaNeenePaliso',
+        title: 'Sreenivasa Neene Paliso',
         goto: 'SreenivasaNeenePaliso',
-        displayTitle: 'ಶ್ರೀನಿವಾಸ ನೀನೇ ಪಾಲಿಸೋ',
+        displayTitle: 'ಶ್ರೀನಿವಾಸ ನೀನೇ',
       },
-
+      {
+        id: 5,
+        title: 'Dheera Maruthi Gambeera Maruthi',
+        goto: 'DheeraMaruthi',
+        displayTitle: 'ಧೀರ ಮಾರುತಿ',
+      },
+      {
+        id: 5,
+        title: 'KodandaRama',
+        goto: 'KodandaRama',
+        displayTitle: 'ಕೋದಂಡರಾಮ',
+      },
     ]);
   };
   const storeData = async (value) => {
