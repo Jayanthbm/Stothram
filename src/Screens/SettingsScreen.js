@@ -2,7 +2,7 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
 import React, { useState, useEffect } from 'react';
-import { View, Text, BackHandler, Switch, ToastAndroid, TouchableWithoutFeedback, ImageBackground, ScrollView, Linking } from 'react-native';
+import { View, Text, BackHandler, Switch, ToastAndroid, TouchableWithoutFeedback, ImageBackground, ScrollView, Linking, SafeAreaView } from 'react-native';
 import Header from '../Components/Header';
 import AsyncStorage from '@react-native-community/async-storage';
 import RNRestart from 'react-native-restart';
@@ -175,7 +175,7 @@ const SettingsScreen = ({ navigation }) => {
     },
     ListView: {
       flexDirection: 'row',
-      marginLeft: 40,
+      marginLeft: 5,
       marginBottom: 10,
     },
     ListViewText: {
