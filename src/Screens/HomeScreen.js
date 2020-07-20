@@ -38,21 +38,12 @@ const HomeScreen = ({ navigation }) => {
   const getData = async () => {
     try {
       const value = await AsyncStorage.getItem('@darkmode');
-      if (value !== null) {
-        if (value === 'true') {
-          setDarkMode(true);
-        }
-        if (value === 'false') {
-          setDarkMode(false);
-        }
-      }
+      value !== null ? value === 'true' ? setDarkMode(true) : setDarkMode(false) : await AsyncStorage.setItem('@darkmode', 'false');
       const dmt = await AsyncStorage.getItem('@darkmodetoggle');
       if (dmt === null) {
         await AsyncStorage.setItem('@darkmodetoggle', 'true');
       }
-    } catch (e) {
-      // error reading value
-    }
+    } catch (e) { }
   };
 
   const styles = {
@@ -127,10 +118,6 @@ const HomeScreen = ({ navigation }) => {
   }, []);
   return (
     <View style={styles.Container}>
-      <Admob
-        type={'banner'}
-        unitId={Adhelper.GenerateId()}
-      />
       <View style={styles.flatGridWrapper}>
         <Text style={styles.headingText}>Select One</Text>
       </View>

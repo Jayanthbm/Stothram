@@ -2,7 +2,7 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
 import React, { useState, useEffect } from 'react';
-import { View, Switch, Dimensions, BackHandler, ScrollView } from 'react-native';
+import { View, Switch, BackHandler, ScrollView } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import Slider from '@react-native-community/slider';
 import Header from '../Components/Header';
@@ -24,9 +24,7 @@ const Tirupalliyucchi = ({ navigation }) => {
         try {
             let v = value ? 'true' : 'false';
             await AsyncStorage.setItem('@darkmode', v);
-        } catch (e) {
-            // saving error
-        }
+        } catch (e) { }
     };
 
     const getData = async () => {
@@ -53,32 +51,11 @@ const Tirupalliyucchi = ({ navigation }) => {
             } else {
                 setShowToggle(true);
             }
-        } catch (e) {
-            // error reading value
-        }
+        } catch (e) { }
     };
-
-
-    const isPortrait = () => {
-        const dim = Dimensions.get('screen');
-        return dim.height >= dim.width;
-    };
-
-    Dimensions.addEventListener('change', () => {
-        let orr = isPortrait() ? 'portrait' : 'landscape';
-        if (orr === 'portrait') {
-            setFont(24);
-        }
-        if (orr === 'landscape') {
-            setFont(38);
-        }
-        setOrientation(orr);
-    });
 
     useEffect(() => {
         getData();
-        let or = isPortrait() ? 'portrait' : 'landscape';
-        setOrientation(or);
         const backAction = () => {
             navigation.navigate('ShotramScreen');
             return true;

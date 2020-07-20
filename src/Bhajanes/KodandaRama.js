@@ -2,7 +2,7 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
 import React, { useState, useEffect } from 'react';
-import { View, Switch, Dimensions, BackHandler, ScrollView } from 'react-native';
+import { View, Switch, BackHandler, ScrollView } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import Slider from '@react-native-community/slider';
 import Header from '../Components/Header';
@@ -14,8 +14,6 @@ const Sname = ({ navigation }) => {
     const [isEnabled, setIsEnabled] = useState(null);
     const [darkmode, setDarkMode] = useState(null);
     const [showToggle, setShowToggle] = useState(null);
-    // eslint-disable-next-line no-unused-vars
-    const [orientation, setOrientation] = useState('portrait');
     const backgroundColor = darkmode ? '#000' : '#fff';
     const textColor = darkmode ? '#fff' : '#000';
 
@@ -58,27 +56,8 @@ const Sname = ({ navigation }) => {
         }
     };
 
-
-    const isPortrait = () => {
-        const dim = Dimensions.get('screen');
-        return dim.height >= dim.width;
-    };
-
-    Dimensions.addEventListener('change', () => {
-        let orr = isPortrait() ? 'portrait' : 'landscape';
-        if (orr === 'portrait') {
-            setFont(24);
-        }
-        if (orr === 'landscape') {
-            setFont(38);
-        }
-        setOrientation(orr);
-    });
-
     useEffect(() => {
         getData();
-        let or = isPortrait() ? 'portrait' : 'landscape';
-        setOrientation(or);
         const backAction = () => {
             navigation.navigate('BhajaneScreen');
             return true;

@@ -222,8 +222,6 @@ const BhajaneScreen = ({ navigation }) => {
               marginTop: 10,
               flex: 1,
             }}
-            // staticDimension={300}
-            // fixed
             spacing={10}
             renderItem={({ item }) => (
               <Item
