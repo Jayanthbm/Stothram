@@ -6,6 +6,7 @@ import { View, Switch, BackHandler, ScrollView } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import Slider from '@react-native-community/slider';
 import Header from '../Components/Header';
+import SubHeader from '../Components/SubHeader';
 import St from '../Components/St';
 import Admob from '../Components/Admob';
 import * as Adhelper from '../Constants/AdUnits';
@@ -102,10 +103,9 @@ const Shatumurai = ({ navigation }) => {
                             marginRight: 1,
                         }}
                     >
-                        <St
-                            color={textColor}
-                            fontSize={font}
-                            line1={'||ತಿರುಪ್ಪಾವೈ||'}
+                        <SubHeader
+                            title="ತಿರುಪ್ಪಾವೈ"
+                            darkmode={darkmode}
                         />
                         <St
                             color={textColor}
@@ -131,10 +131,9 @@ const Shatumurai = ({ navigation }) => {
                             line7={'ಶೆಂಗಣ್ ತಿರುಮುಗತ್ತು ಚ್ಚೇಲ್ವತ್ತಿರುಮಾಲಾಲ್,'}
                             line8={'ಎಂಗುಂ ತಿರುವರುಳ್ ಪೆತ್ತು-ಇರುಬರುವೆರೆಂಬವಾಯ್'}
                         />
-                        <St
-                            color={textColor}
-                            fontSize={font}
-                            line1={'||ತಿರುಪ್ಪಲ್ಲಾಂಡು||'}
+                        <SubHeader
+                            title="ತಿರುಪ್ಪಲ್ಲಾಂಡು"
+                            darkmode={darkmode}
                         />
                         <St
                             color={textColor}
@@ -153,10 +152,9 @@ const Shatumurai = ({ navigation }) => {
                             line4={'ಚುಡಿರಾಳಿಯುಂ ಪಲ್ಲಾಂಡು ಪಡೈಪೋರ್ ಪುಕ್ಕು ಮುಳಂಗುಂ,'}
                             line5={'ಅಪ್ಪಾಂಜಚನ್ನಿಯಮುಂ ಪಲ್ಲಾಂಡೆ ||2||'}
                         />
-                        <St
-                            color={textColor}
-                            fontSize={font}
-                            line1={'||ವಾಳಿತ್ತಿರುನಾಮಮ್||'}
+                        <SubHeader
+                            title="ವಾಳಿತ್ತಿರುನಾಮಮ್"
+                            darkmode={darkmode}
                         />
                         <St
                             color={textColor}

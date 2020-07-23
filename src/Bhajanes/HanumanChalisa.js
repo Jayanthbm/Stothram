@@ -6,6 +6,7 @@ import { View, Switch, BackHandler, ScrollView } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import Slider from '@react-native-community/slider';
 import Header from '../Components/Header';
+import SubHeader from '../Components/SubHeader';
 import St from '../Components/St';
 import Admob from '../Components/Admob';
 import * as Adhelper from '../Constants/AdUnits';
@@ -105,10 +106,9 @@ const HanumanChalisa = ({ navigation }) => {
               marginRight: 1,
             }}
           >
-            <St
-              color={textColor}
-              fontSize={font}
-              line1={'ದೋಹಾ'}
+            <SubHeader
+              title="ದೋಹಾ"
+              darkmode={darkmode}
             />
             <St
               color={textColor}
@@ -118,10 +118,9 @@ const HanumanChalisa = ({ navigation }) => {
               line3={'ಬುದ್ಧಿಹೀನ ತನುಜಾನಿಕೈ ಸುಮಿರೌ ಪವನ ಕುಮಾರ |'}
               line4={'ಬಲ ಬುದ್ಧಿ ವಿದ್ಯಾ ದೇಹು ಮೋಹಿ ಹರಹು ಕಲೇಶ ವಿಕಾರ್ ||'}
             />
-            <St
-              color={textColor}
-              fontSize={font}
-              line1={'ಚೌಪಾಈ'}
+            <SubHeader
+              title="ಚೌಪಾಈ"
+              darkmode={darkmode}
             />
             <St
               color={textColor}

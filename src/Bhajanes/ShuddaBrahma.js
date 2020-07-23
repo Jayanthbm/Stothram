@@ -6,6 +6,7 @@ import { View, Switch, BackHandler, ScrollView } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
 import Slider from '@react-native-community/slider';
 import Header from '../Components/Header';
+import SubHeader from '../Components/SubHeader';
 import St from '../Components/St';
 import Admob from '../Components/Admob';
 import * as Adhelper from '../Constants/AdUnits';
@@ -116,10 +117,9 @@ const ShuddaBrahma = ({ navigation }) => {
                             fontSize={font}
                             line1={'ರಾಮ ರಾಮ ಜಯ ಸೀತಾ ರಾಮ |'}
                         />
-                        <St
-                            color={textColor}
-                            fontSize={font}
-                            line1={'ಬಾಲಕಾಂಡಂ-'}
+                        <SubHeader
+                            title="ಬಾಲಕಾಂಡಂ"
+                            darkmode={darkmode}
                         />
                         <St
                             color={textColor}
@@ -231,10 +231,9 @@ const ShuddaBrahma = ({ navigation }) => {
                             fontSize={font}
                             line1={'ಶ್ರೀಮದಯೋಧ್ಯಾಪಾಲಕ ರಾಮ |'}
                         />
-                        <St
-                            color={textColor}
-                            fontSize={font}
-                            line1={'ಅಯೋಧ್ಯಾಕಾಂಡಂ-'}
+                        <SubHeader
+                            title="ಅಯೋಧ್ಯಾಕಾಂಡಂ"
+                            darkmode={darkmode}
                         />
                         <St
                             color={textColor}
@@ -296,10 +295,9 @@ const ShuddaBrahma = ({ navigation }) => {
                             fontSize={font}
                             line1={'ಭರತಾರ್ಪಿತನಿಜಪಾದುಕ ರಾಮ |'}
                         />
-                        <St
-                            color={textColor}
-                            fontSize={font}
-                            line1={'ಅರಣ್ಯಕಾಂಡಂ-'}
+                        <SubHeader
+                            title="ಅರಣ್ಯಕಾಂಡಂ"
+                            darkmode={darkmode}
                         />
                         <St
                             color={textColor}
@@ -371,10 +369,9 @@ const ShuddaBrahma = ({ navigation }) => {
                             fontSize={font}
                             line1={'ಕಬಂಧಬಾಹುಚ್ಛೇದನ ರಾಮ |'}
                         />
-                        <St
-                            color={textColor}
-                            fontSize={font}
-                            line1={'ಕಿಷ್ಕಿಂಧಾಕಾಂಡಂ-'}
+                        <SubHeader
+                            title="ಕಿಷ್ಕಿಂಧಾಕಾಂಡಂ"
+                            darkmode={darkmode}
                         />
                         <St
                             color={textColor}
@@ -401,10 +398,9 @@ const ShuddaBrahma = ({ navigation }) => {
                             fontSize={font}
                             line1={'ಹಿತಕರಲಕ್ಷ್ಮಣಸಂಯುತ ರಾಮ |'}
                         />
-                        <St
-                            color={textColor}
-                            fontSize={font}
-                            line1={'ಸುಂದರಕಾಂಡಂ-'}
+                        <SubHeader
+                            title="ಸುಂದರಕಾಂಡಂ"
+                            darkmode={darkmode}
                         />
                         <St
                             color={textColor}
@@ -446,10 +442,9 @@ const ShuddaBrahma = ({ navigation }) => {
                             fontSize={font}
                             line1={'ಕಪಿವರವಚನಾಶ್ವಾಸಿತ ರಾಮ |'}
                         />
-                        <St
-                            color={textColor}
-                            fontSize={font}
-                            line1={'ಯುದ್ಧಕಾಂಡಂ-'}
+                        <SubHeader
+                            title="ಯುದ್ಧಕಾಂಡಂ"
+                            darkmode={darkmode}
                         />
                         <St
                             color={textColor}
@@ -577,10 +572,9 @@ const ShuddaBrahma = ({ navigation }) => {
                             fontSize={font}
                             line1={'ಸಮಸ್ತಲೋಕಾಧಾರಕ ರಾಮ |'}
                         />
-                        <St
-                            color={textColor}
-                            fontSize={font}
-                            line1={'ಉತ್ತರಕಾಂಡಂ-'}
+                        <SubHeader
+                            title="ಉತ್ತರಕಾಂಡಂ"
+                            darkmode={darkmode}
                         />
                         <St
                             color={textColor}
@@ -692,10 +686,9 @@ const ShuddaBrahma = ({ navigation }) => {
                             fontSize={font}
                             line1={'ರಾಮ ರಾಮ ಜಯ ಸೀತಾ ರಾಮ ||'}
                         />
-                        <St
-                            color={textColor}
-                            fontSize={font}
-                            line1={'ಮಂಗಳಂ-'}
+                        <SubHeader
+                            title="ಮಂಗಳಂ"
+                            darkmode={darkmode}
                         />
                         <St
                             color={textColor}
