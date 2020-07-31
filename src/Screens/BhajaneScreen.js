@@ -70,6 +70,12 @@ const BhajaneScreen = ({ navigation }) => {
         goto: 'KodandaRama',
         displayTitle: 'ಕೋದಂಡರಾಮ',
       },
+      {
+        id: 6,
+        title: 'SriramChandirane',
+        goto: 'SriramChandirane',
+        displayTitle: 'ಶ್ರೀ ರಾಮಚಂದಿರನೆ',
+      }
     ]);
   };
   const storeData = async (value) => {

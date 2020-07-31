@@ -40,6 +40,7 @@ import ShuddaBrahma from './src/Bhajanes/ShuddaBrahma';
 import SreenivasaNeenePaliso from './src/Bhajanes/SreenivasaNeenePaliso';
 import DheeraMaruthi from './src/Bhajanes/DheeraMaruthi';
 import KodandaRama from './src/Bhajanes/KodandaRama';
+import SriramChandirane from './src/Bhajanes/SriramChandirane';
 const switchNavigator = createSwitchNavigator({
   HomeScreen: createBottomTabNavigator({
     HomeScreen: {
@@ -96,7 +97,8 @@ const switchNavigator = createSwitchNavigator({
   ShuddaBrahma: ShuddaBrahma,
   SreenivasaNeenePaliso: SreenivasaNeenePaliso,
   DheeraMaruthi: DheeraMaruthi,
-  KodandaRama: KodandaRama
+  KodandaRama: KodandaRama,
+  SriramChandirane: SriramChandirane
 });
 
 const App = createAppContainer(switchNavigator);
